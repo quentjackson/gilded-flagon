@@ -329,7 +329,7 @@ footer { text-align: center; font: 500 .9rem/1.5 var(--label); letter-spacing: .
 const btn = document.getElementById('roll'), face = document.getElementById('face'), out = document.getElementById('result');
 const pick = n =>
   n === 1  ? ['Natural 1. The barkeep hands you <strong>a glass of water</strong>. Hydrate, adventurer.', null] :
-  n === 20 ? ['Natural 20! <strong>Any potion you like</strong>, and you get to brag about it all night.', null] :
+  n === 20 ? ['Natural 20! <strong>Any potion you like</strong>, plus <strong>one free reroll</strong> in tonight's game. Show the barkeep and your DM.', null] :
   n <= 7   ? ['The dice call for a <strong>Greater Potion of Healing</strong>.', 'healing'] :
   n <= 13  ? ['The shadows choose you. <strong>Potion of Shadow Blend</strong>.', 'shadow'] :
              ['Fate demands fire. Cast <strong>The Evocation Spell</strong>.', 'evocation'];
